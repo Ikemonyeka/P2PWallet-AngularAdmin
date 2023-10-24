@@ -1,0 +1,14 @@
+<h1 mat-dialog-title class="listDesc" style="text-align: center;"><b>Set up the GL Account</b></h1>
+<mat-dialog-content [formGroup]="createGL">
+        <input type="text" formControlName="glName" placeholder="GL Purpose" class="p_con" id="">
+        <div class="dAcc">
+            <select class="listCurr"  formControlName="glCurrency">
+                <option value="default" disabled>--Select Destination Account</option>
+                <option *ngFor="let c of currList" value={{c.currency}}> {{c.currency}}</option>
+            </select>
+            <small *ngIf="formError" class="accError">*Some fields are empty</small>
+        </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button type="submit" class="btn1" (click)="createGl()">Create +</button>
+</mat-dialog-actions>

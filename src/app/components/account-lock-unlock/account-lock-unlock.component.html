@@ -1,0 +1,27 @@
+<div class="con1 wrapper">
+    <div class="table_con">
+        <h1>Lock & Unlock All Accounts</h1>
+        <div class="table_style">    
+            <table datatable [dtOptions]="dtoptions" [dtTrigger]="dtTrigger" class="table t_d table-active table-bordered table-striped table-hover">
+                <thead style="font-size: 13px;" class="table-dark">
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Date Created</th>
+                        <th>Reason</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{user.user}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.dateCreated}}</td>
+                        <td>
+                            <mat-slide-toggle [(ngModel)]="user.status" (ngModelChange)="currentUser(user)"></mat-slide-toggle>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.btn1{
+    background-color: #060E57;
+    border: none;
+    width: 6vw;
+    height: 6vh;
+    border-radius: 12px;
+    color: white;
+    margin-left: 18.5vw;
+    cursor: pointer;
+}
+
+.p_con{
+    width: 20vw;
+    height: 6vh;
+    /* border: solid red 1px; */
+    margin-left: 3vw;
+    outline: none;
+}
+
+.dAcc{
+    width: 20vw;
+    height: fit-content;
+    font-size: 17px;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    /* border: red solid 1px; */
+}
+
+.listCurr{
+    width: 20vw;
+    height: 5vh;
+    outline: none;
+}
+
+.accError{
+    color: red;
+    display: grid;
+    /* margin-left: 3vw; */
+}

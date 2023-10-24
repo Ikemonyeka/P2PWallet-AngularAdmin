@@ -1,0 +1,12 @@
+<h1 mat-dialog-title class="listDesc"><b>Reject Upload</b></h1>
+<mat-dialog-content>
+    <div class="dAcc" [formGroup]="rejectForm">
+        Kindly let the user know why this upload is being rejected
+        <br>
+        <input type="text" formControlName="reason" placeholder="Reason...">
+        <small class="accError" *ngIf="rejectFormInvalid">*a reason is required to reject this upload</small>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button type="submit" class="btn1" (click)="RejectUpload()">Done</button>
+</mat-dialog-actions>

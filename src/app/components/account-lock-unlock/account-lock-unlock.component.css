@@ -1,0 +1,35 @@
+.con1{
+    /* border: 1px solid red; */
+    width: 81vw;
+    height: 84vh;
+    margin-top: 14vh;
+    margin-left: 16.5vw;
+    color: black;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.table_con{
+    width: 81vw;
+    height: 84vh;
+    /* border: red solid 1px;  */
+}
+
+.table_con2{
+    width: 39.5vw;
+    height: 84vh;
+    /* border: red solid 1px; */
+    margin-left: 2vw;
+}
+
+.table_style{
+    width: 81vw;
+    height: 60vh;
+    /* border: red solid 1px; */
+}
+
+.t_d{
+    text-align: start;
+}

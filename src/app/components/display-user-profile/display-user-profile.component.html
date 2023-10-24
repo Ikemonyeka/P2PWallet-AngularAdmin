@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+    <h1 mat-dialog-title class="listDesc" style="text-align: center;"><b>Display User Profile</b></h1>
+    <i class="fa fa-close" (click)="closeDialog()"></i>
+</div>
+<mat-dialog-content>
+            <div class="con_1">
+                <div class="search_con" [formGroup]="searchForm">
+                    <input type="text" class="search_i" formControlName="identifier" (input)="search()" placeholder="Type in here to search">
+                    <button type="submit" class="btn_search" (click)="search()"><i class="fa fa-search"></i> Search</button>
+                </div>
+                <div class="card-container">
+                    <div class="profile_card" *ngFor="let user of users">
+                        <div class="p_con">Username: {{user.Username}}</div>
+                        <div class="p_con">Email: {{user.Email}}</div>
+                        <div class="p_con">Date Created: {{user.dateCreated}}</div>
+                        <div class="p_con1">Locked or Unlocked</div>
+                        <div class="p_con1a"><mat-slide-toggle [(ngModel)]="user.Status" (ngModelChange)="currentUser(user)"></mat-slide-toggle></div>
+                    </div>
+                </div>
+                <div class="page_Con">
+                    <button type="submit" class="btn_con" (click)="PrevNextPage('double-left')"><i class="fa fa-angle-double-left btn"></i></button>
+                    <button type="submit" class="btn_con" (click)="PrevNextPage('left')"><i class="fa fa-angle-left btn"></i></button>
+                    <button type="submit" class="btn_con" (click)="PrevNextPage('right')"><i class="fa fa-angle-right btn"></i></button>
+                    <button type="submit" class="btn_con" (click)="PrevNextPage('double-right')"><i class="fa fa-angle-double-right btn"></i></button>
+                </div>
+            </div>
+</mat-dialog-content>
+<!-- <mat-dialog-actions>
+    <button mat-raised-button type="submit" class="btn1">Create +</button>
+</mat-dialog-actions> -->

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h3 mat-dialog-title style="text-align: center;">New KYC Requirement</h3>
+<mat-dialog-content [formGroup]="newKYCForm">
+    <input type="text" class="dial_p" formControlName="documentName" placeholder="Type New Requirement here...">
+    <small class="resSuccess" *ngIf="successfulResponse">
+        <div class="wrapper">
+            <i class="fa fa-check-circle"></i>
+            <p>Updated Successfully</p>
+        </div>
+    </small>
+    <small class="accError" *ngIf="failedResponse">
+        <div class="wrapper">
+            <i class="fa fa-exclamation-triangle"></i>
+            <p>Failed, try again later</p>
+        </div>
+    </small>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button type="submit" class="btn1" (click)="createKYCDocument()">Create</button>
+    <button mat-dialog-close mat-raised-button type="submit" class="btn2">Cancel</button>
+</mat-dialog-actions>

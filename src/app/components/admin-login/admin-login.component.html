@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form [formGroup]="loginForm">
+        <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+
+            <div class="blur-con">
+            </div>
+            <div class="login-con">
+                <div class="logo">
+                    <img src="/assets/images/logo.png" class="logo" alt="">
+                </div>
+                <h2 class="text">Admin Sign in</h2>
+                <input type="text" formControlName="username" class="input1" placeholder="Username">
+                <input type="password" formControlName="password" class="input2" placeholder="Password">
+                <small class="rq" *ngIf="loginForm.controls['username'].dirty && 
+                loginForm.hasError('required', 'username') 
+                || loginForm.controls['password'].dirty && 
+                loginForm.hasError('required', 'password')">*username and password are required</small>
+
+                <button type="submit" class="signInbtn" (click)="Submit()">Sign In</button>
+            </div>
+        </div >
+    </form>
+    <!-- <div class="bg-container"> -->
+
+    <!-- </div> -->
+</body>
+</html>

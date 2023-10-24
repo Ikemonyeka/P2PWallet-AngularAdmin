@@ -1,0 +1,17 @@
+<h1 mat-dialog-title class="listDesc"><b>You've Succefully {{typeOfStatus}} {{currentUserProfile.Username}}'s account</b></h1>
+<mat-dialog-content [formGroup]="descForm">
+    <div class="dAcc">
+        Select a reason from the options below as to why this account was {{typeOfStatus}} 
+        <br>
+        <div class="listDesc">
+            <select formControlName="description">
+                <option value="default" disabled>--Select Destination Account</option>
+                <option *ngFor="let d of descriptions" value={{d.description}}>{{d.description}}</option>
+            </select>
+            <small *ngIf="formError" class="accError">*Some fields are empty</small>
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button type="submit" class="btn1" (click)="lockunlock()">Done</button>
+</mat-dialog-actions>

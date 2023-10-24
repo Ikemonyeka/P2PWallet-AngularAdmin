@@ -1,0 +1,52 @@
+.btn1{
+    background-color: #060E57;
+    border: none;
+    width: 6vw;
+    height: 6vh;
+    border-radius: 12px;
+    color: white;
+    margin-left: 13vw;
+    cursor: pointer;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.btn2{
+    background-color: #ae2121;
+    border: none;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 12px;
+    color: white;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+input{
+    width: 20vw;
+    height: 7vh;
+    outline: none;
+    text-indent: 1vw;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+}
+
+.accError{
+    color: red;
+    display: grid;
+    margin-left: 3vw;
+}
+
+.resSuccess{
+    color: green;
+    display: grid;
+    margin-left: 3vw;
+}
+
+i{
+    margin-top: 5px;
+    margin-right: 5px;
+}

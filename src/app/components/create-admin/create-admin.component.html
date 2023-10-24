@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="con1">
+    <h1 class="head_text">Create A New Admin</h1>
+    <div class="new_con" [formGroup]="newAdmin">
+        <div class="input_con wrapper">
+            <div class="input_text">
+                <input type="text" formControlName="firstName" placeholder="Firstname">
+            </div>
+            <div class="input_text2">
+                <input type="text" formControlName="lastName" placeholder="Lastname">
+            </div>
+        </div>
+        <div class="input_con wrapper">
+            <div class="input_text">
+                <input type="text" formControlName="username" placeholder="Username">
+            </div>
+            <div class="input_text2">
+                <input type="text" formControlName="email" placeholder="Email">
+            </div>
+        </div>
+        <div class="input_con wrapper">
+            <div class="input_text">
+                <input type="text" formControlName="phoneNumber" placeholder="Phone Number">
+            </div>
+        </div>
+        <button type="submit" class="btnEP" (click)="create()">Create <i class="fa fa-plus"></i></button>
+        <div class="btn_create">
+            <small class="rq" *ngIf="newAdmin.controls['firstName'].dirty && newAdmin.hasError('required', 'firstName') || 
+            newAdmin.controls['lastName'].dirty && newAdmin.hasError('required', 'lastName') ||
+            newAdmin.controls['username'].dirty && newAdmin.hasError('required', 'username') || 
+            newAdmin.controls['phoneNumber'].dirty && newAdmin.hasError('required', 'phoneNumber')">*All fields are required</small>
+            <br>
+            <small class="rq" *ngIf="newAdmin.controls['email'].dirty && newAdmin.hasError('required', 'email') || newAdmin.controls['email'].errors?.['pattern']">*email required</small>
+        </div>
+    </div>
+</div>

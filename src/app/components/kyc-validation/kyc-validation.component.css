@@ -1,0 +1,197 @@
+.con1{
+    /* border: 1px solid red; */
+    width: 81vw;
+    height: 72vh;
+    margin-top: 14vh;
+    margin-left: 16.5vw;
+    z-index: 0;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.kyc_req{
+    width: 20vw;
+    height: 40vh;
+    /* border: 1px solid blue; */
+    background-color: white;
+    box-shadow: 5px 0px 5px 5px lightgray;
+    border-radius: 10px 10px 0 0;
+}
+
+.req_list{
+    width: 20vw;
+    height: 33vh;
+    overflow: auto;
+    overflow-x: hidden;
+    /* border: solid 1px lightslategray; */
+}
+
+.req_con{
+    text-align: start; 
+    margin-left: 0.5vw;
+}
+
+.req_text_con{
+    width: 20vw;
+    height: 8.25vh;
+    border: solid 1px lightslategray;
+    background-color: rgb(207, 207, 207);
+    padding: 5px 0px;
+    text-indent: 1vw;
+    font-size: 20px;
+}
+
+.new_req{
+    cursor: pointer; 
+    font-size: 20px; 
+    color: white; 
+    margin-left: 2vw; 
+    margin-top: 1vh;
+}
+
+.kyc_con{
+    /* border: 1px solid green; */
+    width: 59vw;
+    height: 74vh;
+    margin-left: 2vw;
+    /* border-radius: 15px; */
+    box-shadow: 5px 0px 5px 5px lightgray;
+}
+
+.info_card_text4{
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #060E57;
+    text-align: center;
+    padding-top: 1vh;
+    /* border: solid 1px red; */
+}
+
+.btn_delete_req{
+    width: 3vw;
+    height: 5vh;
+    font-size: 20px;
+    color: red;
+    border: none;
+    background-color: white;
+}
+
+.search_con{
+    width: 59vw;
+    height: 7vh;
+    /* border: solid red 1px; */
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+.search_i{
+    width: 48vw;
+    margin-left: 1vw;
+    height: 7vh;
+    text-indent: 2vw;
+    outline: none;
+    margin-top: 1vh;
+}
+
+.btn_search{
+    width: 9vw;
+    height: 7vh;
+    background-color: #060E57;
+    color: white;
+    border: none;
+    margin-top: 1vh;
+}
+
+.kyc_pending{
+    width: 57vw;
+    height: 55vh;
+    /* border: solid red 1px; */
+    margin-left: 1vw;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.page_Con{
+    width: 57vw;
+    height: 7vh;
+    /* border: solid red 1px; */
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.btn_con{
+    border: none;
+}
+
+.btn_con:hover{
+    border: 1px #060E57 solid;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5vh;
+}
+
+/* Style for the dropdown button */
+.dropdown-button {
+    width: 57vw;
+    background-color: #060E57;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    /* margin-bottom: 10vh; */
+}
+
+.user_text{
+    text-indent: 5vw;
+    margin-top: 1vh;
+}   
+
+.pending_text{
+    text-align: end;
+    text-indent: 31vw;
+    margin-top: 1vh;
+}   
+
+.fa-arrow-down{
+    margin-top: 1.5vh;
+    font-size: 25px;
+}
+
+.btn_accept{
+    width: 6vw;
+    height: 5vh;
+    border: none;
+    background-color: green;
+    color: white;
+    margin-left: 17vw;
+}
+
+.btn_reject{
+    width: 6vw;
+    height: 5vh;
+    margin-left: 1vw;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.text_indentation{
+    text-indent: 10vw;
+    cursor: pointer;
+}
+
+.text_indentation:hover{
+    color: #060E57;
+}

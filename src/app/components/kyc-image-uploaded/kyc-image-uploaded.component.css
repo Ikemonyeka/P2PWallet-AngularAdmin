@@ -1,0 +1,30 @@
+.img_Style{
+    width: 60vw;
+    height: fit-content;
+}
+
+.close_pop{
+    width: 60vw;
+    height: 6vh;
+    background-color: white;
+    cursor: pointer;
+}
+
+.close_pop:hover{
+    color: red;
+}
+
+.fa-close{
+    font-size: 20px;
+    margin-top: 1vh;
+    text-indent: 77vw;
+}
+
+.img_con{
+    width: 60vw;
+    height: 90vh;
+    /* border: red solid 1px; */
+    margin: auto;
+    overflow: auto;
+    overflow-x: hidden;
+}
